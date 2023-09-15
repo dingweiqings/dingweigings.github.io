@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>生活</title>
+    <url>//2023/09/15/%E7%94%9F%E6%B4%BB/</url>
+    <content><![CDATA[<h1 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h1>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>文化理解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多重继承</title>
+    <url>//2023/01/17/C++/%E5%A4%9A%E9%87%8D%E7%BB%A7%E6%89%BF/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>c++11新特性</title>
+    <url>//2023/01/17/C++/C++%E6%96%B0%E7%89%B9%E6%80%A7/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>移位</title>
+    <url>//2022/11/22/C++/%E5%B7%A6%E7%A7%BB%E5%8F%B3%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="正数负数位移"><a href="#正数负数位移" class="headerlink" title="正数负数位移"></a>正数负数位移</h2><h2 id="偏移量是正数，负数"><a href="#偏移量是正数，负数" class="headerlink" title="偏移量是正数，负数"></a>偏移量是正数，负数</h2><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2>]]></content>
+  </entry>
+  <entry>
+    <title>数据类型和运算</title>
+    <url>//2022/11/22/C++/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="数据类型和大小"><a href="#数据类型和大小" class="headerlink" title="数据类型和大小"></a>数据类型和大小</h2><p>short 16位<br>int 等于字长，64位机上一般是32位<br>long 可以和int一样，也可以和long long 一样，不小于int<br>long long 64位</p>
+<p>float  32位<br>double  64位<br>long double 128位甚至更多</p>
+<h2 id="正数和负数的整除和取模"><a href="#正数和负数的整除和取模" class="headerlink" title="正数和负数的整除和取模"></a>正数和负数的整除和取模</h2>]]></content>
+  </entry>
+  <entry>
+    <title>ConcurrentHashMap</title>
+    <url>//2022/11/22/java/ConcurrentHashMap/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>HashMap</title>
+    <url>//2022/11/22/java/HashMap/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>TransferQueue</title>
+    <url>//2022/11/22/java/TransferQueue/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>TreeMap</title>
+    <url>//2022/11/22/java/TreeMap/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>jvm-gc</title>
+    <url>//2022/11/22/java/jvm-gc/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>线程池</title>
+    <url>//2022/11/22/java/%E7%BA%BF%E7%A8%8B%E6%B1%A0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>java 线程池</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LSM树</title>
+    <url>//2022/11/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/LSM%E6%A0%91/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>RSA</title>
+    <url>//2022/11/22/%E7%AE%97%E6%B3%95/RSA/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>算法/crc学习</title>
+    <url>//2022/11/21/%E7%AE%97%E6%B3%95/crc%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h2 id="奇偶校验"><a href="#奇偶校验" class="headerlink" title="奇偶校验"></a>奇偶校验</h2><h2 id="磁盘冗余阵列"><a href="#磁盘冗余阵列" class="headerlink" title="磁盘冗余阵列"></a>磁盘冗余阵列</h2><h2 id="数学原理"><a href="#数学原理" class="headerlink" title="数学原理"></a>数学原理</h2><h3 id="多项式代数和多项式除法"><a href="#多项式代数和多项式除法" class="headerlink" title="多项式代数和多项式除法"></a>多项式代数和多项式除法</h3><p>高等代数中的多项式代数知识</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">M/N=Q...R </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这里容易得到，R会比N幂次要低，就和整数除法m&#x2F;n&#x3D;q..r ，0&lt;&#x3D;r&lt;n 一样</p>
+<ol>
+<li>除法规则-竖式除法<br>每次消去余数最高项，直到余数最高次项小于除数<br><a href="../../assets/divide.png">!除法</a></li>
+</ol>
+<p>大牛在1961年发布的论文 <a href="https://en.wikipedia.org/wiki/W._Wesley_Peterson">https://en.wikipedia.org/wiki/W._Wesley_Peterson</a></p>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><ol>
+<li><p>朴素的竖式多项式除法的翻译<br>这里主要思路是用商消去最高位，然后在输入的数组上减去商*生成多项式，因此余数也是保存在输入的被除多项式位置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int divide( double num[], int nlen,</span><br><span class="line">            double den[], int dlen,</span><br><span class="line">            double quotient[], int *qlen )</span><br><span class="line">&#123;</span><br><span class="line">    int n, d, q;</span><br><span class="line">    // The lengths are one more than the last index; decrement them</span><br><span class="line">    // here so the call is less confusing</span><br><span class="line">    nlen--;</span><br><span class="line">    dlen--;</span><br><span class="line">    q = 0;</span><br><span class="line">    // when n &gt; dlen, the result is no longer a polynomial</span><br><span class="line">    // (e.g. trying to divide x by x^2</span><br><span class="line">    for ( n = nlen; n &gt;= dlen; n-- )</span><br><span class="line">    &#123;</span><br><span class="line">      // First, divide the nth element of numerator with the last element</span><br><span class="line">      // of the denominator</span><br><span class="line">      quotient[ n - dlen ] = num[ n ] / den[ dlen ];</span><br><span class="line">      q++;</span><br><span class="line">      // Now, multiply each element of the denominator by each</span><br><span class="line">      // corresponding element of the numerator and subtract the</span><br><span class="line">      // result</span><br><span class="line">      for ( d = dlen; d &gt;= 0; d-- )</span><br><span class="line">      &#123;</span><br><span class="line">        num[ n - ( dlen - d ) ] -= den[ d ] * quotient[ n - dlen ];</span><br><span class="line">        //采用模2除法，需要修改成这行代码</span><br><span class="line">        num[ n - ( denlen - d ) ] = fabs( num[ n - ( denlen - d ) ] );</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    *qlen = q;</span><br><span class="line"></span><br><span class="line">    return ( nlen - *qlen + 1 );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>使用异或来计算<br>这里比较难理解，让我想了很久，还是基于竖式除法的思路，从竖式除法我们可以发现，32位的生成多项式最高位可以不存储，因为每次都是消去最高项；可以用一个32位int来保存余数，长度小于32位的二进制序列余数就是它自己，因此需要在右端补上32位；从竖式除法中我们可以发现，做减法的次数等于被除数长度-除数长度+1；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">unsigned long int compute_crc( unsigned long input,</span><br><span class="line">                               int len,</span><br><span class="line">                               unsigned long divisor )</span><br><span class="line">&#123;</span><br><span class="line">  //要做被除数长度-除数长度+1=24+32-33+1=24  </span><br><span class="line">  while ( len-- )</span><br><span class="line">  &#123;</span><br><span class="line">    //如果最高位是1，那么这位是要被消去，余数等于剩下的和除数异或；如果最高位是0，我们发现最高位死0，实际上是</span><br><span class="line">    //商为0，和全0异或等于它自己，等效于直接左移</span><br><span class="line">    input = ( input &amp; 0x80000000 ) ? divisor ^ ( input &lt;&lt; 1 ) : ( input &lt;&lt; 1 );</span><br><span class="line">  &#125;</span><br><span class="line">  //余数存储在32位，这里实际上等价于竖式多项式的低32位；因为运算过程中，余数始终保存在input位置</span><br><span class="line">  return input;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">  unsigned long int crc32_divisor = 0x04C11DB7;</span><br><span class="line">  //下面的input按ABC实际上的值字节做了反转，多项式是低字节在低位，为了位对齐</span><br><span class="line">  //   0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, // C</span><br><span class="line">  //   0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, // B</span><br><span class="line">   //  0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0  // A</span><br><span class="line">  unsigned long int input = 0x8242C200; // ABC; backwards &amp; left aligned</span><br><span class="line"></span><br><span class="line">  printf( &quot;%lx\n&quot;, compute_crc( input, 24, crc32_divisor ); // 5A5B433A</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="常见组件关于crc的实现"><a href="#常见组件关于crc的实现" class="headerlink" title="常见组件关于crc的实现"></a>常见组件关于crc的实现</h2><ol>
+<li>mariadb中用的是查表，或者使用cpu的sse来计算</li>
+<li>zlib</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><ol>
+<li>这是大牛的ppt讲解，<a href="https://pdfs.semanticscholar.org/44c1/4780d58015f8411fb85efa58a4aa3747a6ad.pdf">https://pdfs.semanticscholar.org/44c1/4780d58015f8411fb85efa58a4aa3747a6ad.pdf</a></li>
+<li>论文原版<a href="https://apt.cs.manchester.ac.uk/ftp/pub/apt/papers/Peterson-Brown_61.pdf">https://apt.cs.manchester.ac.uk/ftp/pub/apt/papers/Peterson-Brown_61.pdf</a></li>
+<li><a href="https://www.shuxuele.com/algebra/polynomials-division-long.html">https://www.shuxuele.com/algebra/polynomials-division-long.html</a></li>
+<li>模2除法<a href="https://blog.csdn.net/weixin_39450145/article/details/83987836">https://blog.csdn.net/weixin_39450145/article/details/83987836</a></li>
+<li>gcc中crc32的实现</li>
+<li>mysql中crc32的实现</li>
+<li>crc32 校验和 <a href="https://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art008">https://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art008</a></li>
+<li>常用的除数多项式</li>
+<li>github doc <a href="https://github.com/komrad36/CRC">https://github.com/komrad36/CRC</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>决策树</title>
+    <url>//2022/11/22/%E7%AE%97%E6%B3%95/%E5%86%B3%E7%AD%96%E6%A0%91/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>哈夫曼编码</title>
+    <url>//2022/11/22/%E7%AE%97%E6%B3%95/%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>素数</title>
+    <url>//2022/11/22/%E7%AE%97%E6%B3%95/%E7%B4%A0%E6%95%B0/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>线性同余</title>
+    <url>//2022/11/22/%E7%AE%97%E6%B3%95/%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>大数运算</title>
+    <url>//2022/11/22/%E7%AE%97%E6%B3%95/%E5%A4%A7%E6%95%B0%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>算法 大整数 数论</tag>
+      </tags>
+  </entry>
+</search>
