@@ -20,14 +20,17 @@
     var CONFIG = {"hostname":"dingweiqings.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"up","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="jvm gc垃圾回收g1回收算法">
+<meta property="og:type" content="article">
 <meta property="og:title" content="gc">
 <meta property="og:url" content="https://dingweiqings.github.io/2023/10/04/jvm/gc/index.html">
 <meta property="og:site_name" content="猫猫攻城狮的博客">
+<meta property="og:description" content="jvm gc垃圾回收g1回收算法">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-04T07:45:13.000Z">
-<meta property="article:modified_time" content="2023-10-04T07:45:13.909Z">
+<meta property="article:modified_time" content="2023-10-09T10:19:41.234Z">
 <meta property="article:author" content="KurtDing">
+<meta property="article:tag" content="gc">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://dingweiqings.github.io/2023/10/04/jvm/gc/">
@@ -222,6 +225,22 @@
 
               <time title="Created: 2023-10-04 15:45:13" itemprop="dateCreated datePublished" datetime="2023-10-04T15:45:13+08:00">2023-10-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-10-09 18:19:41" itemprop="dateModified" datetime="2023-10-09T18:19:41+08:00">2023-10-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jvm/" itemprop="url" rel="index"><span itemprop="name">jvm</span></a>
+                </span>
+            </span>
 
           
 
@@ -234,7 +253,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h1 id="jvm-gc"><a href="#jvm-gc" class="headerlink" title="jvm gc"></a>jvm gc</h1><h1 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h1><h1 id="g1回收算法"><a href="#g1回收算法" class="headerlink" title="g1回收算法"></a>g1回收算法</h1>
     </div>
 
     
@@ -261,6 +280,9 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/gc/" rel="tag"># gc</a>
+          </div>
 
         
 
@@ -272,8 +294,8 @@
       <i class="fa fa-chevron-left"></i> 循环码
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/10/04/jvm/%E5%8D%B3%E6%97%B6%E7%BC%96%E8%AF%91/" rel="next" title="即时编译">
-      即时编译 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/10/05/java/%E9%94%81%E6%A1%86%E6%9E%B6/" rel="next" title="可重入锁">
+      可重入锁 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -334,6 +356,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jvm-gc"><span class="nav-number">1.</span> <span class="nav-text">jvm gc</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6"><span class="nav-number">2.</span> <span class="nav-text">垃圾回收</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#g1%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">g1回收算法</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -347,20 +370,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-count">23</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
